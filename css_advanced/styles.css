@@ -38,47 +38,48 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b6b; /* Figma accent color */
+    color: #ff6b6b;
 }
 
-/* ===== Hero / Banner Section with Cards ===== */
-section:first-of-type {
+/* ===== Hero / Banner Section ===== */
+.hero {
     position: relative;
     background: url('./images/Object.png') no-repeat center center;
     background-size: cover;
     min-height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertical center */
-    align-items: center;     /* horizontal center */
+    justify-content: center;
+    align-items: center;
     padding: 50px 20px;
     gap: 50px;
     text-align: center;
 }
 
-/* Hero Text */
-section:first-of-type > div:first-child {
-    display: flex;
-    flex-direction: column; /* heading over SMILES/GRIN/LAUGH */
-    align-items: center;
-    gap: 20px;
-}
-
-section:first-of-type > div:first-child h1 {
+.hero-text h1 {
     font-size: 48px;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 20px;
 }
 
-section:first-of-type > div:first-child span {
-    display: inline-block;
+.hero-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.hero-tags span {
     font-size: 20px;
     font-weight: 500;
     color: #ff6b6b;
-    margin: 0 5px;
 }
 
-section:first-of-type > div:first-child button {
+.hero-text button {
     padding: 15px 30px;
     font-size: 18px;
     font-weight: 600;
@@ -89,71 +90,149 @@ section:first-of-type > div:first-child button {
     cursor: pointer;
 }
 
-/* Learn from the Pros Cards on Banner */
-section:first-of-type > div:nth-child(2) {
+/* Learn from the Pros Cards */
+.pros-cards {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center; /* horizontally center cards */
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
-section:first-of-type > div:nth-child(2) > div {
+.pros-cards .card {
     background-color: rgba(255,255,255,0.8);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    flex: 0 1 200px;
+    width: 200px;
 }
 
-section:first-of-type > div:nth-child(2) > div img {
+.pros-cards .card img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-section:first-of-type > div:nth-child(2) > div h3 {
+.pros-cards .card h3 {
     margin-bottom: 5px;
 }
 
-section:first-of-type > div:nth-child(2) > div p {
+.pros-cards .card p {
     font-size: 14px;
 }
 
-/* ===== Quote / Testimonial Section ===== */
-section:nth-of-type(2) {
+/* ===== Quote Section ===== */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 50px;
+    background-color: #b21fc6;
+    text-align: center;
+    color: #fff;
+}
+
+.quote-section blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.quote-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quote-section p {
+    font-size: 16px;
+    color: #f0e6f8;
+}
+
+/* ===== Videos Section ===== */
+.videos-section {
+    padding: 80px 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.videos-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.videos-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 80px 100px;
-    background-color: #f9f9f9;
+    gap: 30px;
     flex-wrap: wrap;
-    text-align: center;
 }
 
-section:nth-of-type(2) img {
-    width: 150px;
-    height: auto;
+.video-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-section:nth-of-type(2) blockquote {
-    font-style: italic;
+.video-card img.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-card h3 {
     font-size: 18px;
-    line-height: 1.6;
+    font-weight: 600;
+    margin: 0;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructor img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.instructor h4 {
+    font-size: 14px;
+    font-weight: 500;
     color: #333;
-    margin-bottom: 15px;
+    margin: 0;
 }
 
-section:nth-of-type(2) h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 5px;
+.rating-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-section:nth-of-type(2) p {
-    font-size: 16px;
-    color: #777;
+.rating-duration img {
+    height: 16px;
+}
+
+.rating-duration p {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
 }
 
 /* ===== Responsive ===== */
@@ -166,69 +245,98 @@ section:nth-of-type(2) p {
         gap: 25px;
     }
 
-    section:first-of-type h1 {
+    .hero-text h1 {
         font-size: 36px;
     }
 
-    section:first-of-type span {
+    .hero-tags span {
         font-size: 16px;
     }
 
-    section:first-of-type button {
+    .hero-text button {
         font-size: 16px;
         padding: 12px 25px;
     }
 
-    section:first-of-type > div:nth-child(2) > div img {
+    .pros-cards .card img {
         width: 100px;
         height: 100px;
     }
 
-    section:nth-of-type(2) {
+    .videos-section {
         padding: 60px 50px;
-        gap: 30px;
     }
 
-    section:nth-of-type(2) blockquote {
-        font-size: 16px;
+    .videos-section h2 {
+        font-size: 28px;
     }
 
-    section:nth-of-type(2) h3 {
-        font-size: 18px;
+    .video-card {
+        width: 200px;
     }
 
-    section:nth-of-type(2) p {
-        font-size: 14px;
+    .video-card img.thumbnail {
+        height: 120px;
+    }
+
+    .quote-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 60px 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    section:first-of-type h1 {
+    .hero-text h1 {
         font-size: 28px;
     }
 
-    section:first-of-type > div:first-child {
-        flex-direction: column; /* stack SMILES / GRIN / LAUGH */
+    .hero-tags {
+        flex-direction: column;
         gap: 10px;
     }
 
-    section:first-of-type > div:nth-child(2) {
-        flex-direction: column; /* stack cards */
+    .pros-cards {
+        flex-direction: column;
         gap: 20px;
     }
 
-    section:first-of-type > div:nth-child(2) > div img {
+    .pros-cards .card img {
         width: 80px;
         height: 80px;
     }
 
-    section:nth-of-type(2) {
-        flex-direction: column;
-        gap: 20px;
-        padding: 40px 20px;
+    .videos-section {
+        padding: 50px 20px;
     }
 
-    section:nth-of-type(2) img {
-        width: 120px;
+    .videos-section h2 {
+        font-size: 24px;
+    }
+
+    .videos-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .instructor {
+        justify-content: center;
+    }
+
+    .quote-section blockquote {
+        font-size: 16px;
+    }
+
+    .quote-section h3 {
+        font-size: 18px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
     }
 }
