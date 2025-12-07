@@ -1,0 +1,581 @@
+/* ===== Reset & Basic Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    background: url('./images/Object.png') no-repeat center center;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.hero-tags span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff6b6b;
+}
+
+.hero-text button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Learn from the Pros Cards */
+.pros-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.pros-cards .card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.pros-cards .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pros-cards .card h3 {
+    margin-bottom: 5px;
+}
+
+.pros-cards .card p {
+    font-size: 14px;
+}
+
+/* ===== Quote Section ===== */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 50px;
+    background-color: #b21fc6;
+    text-align: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.quote-section .quote-text blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.quote-section .quote-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quote-section .quote-text p {
+    font-size: 16px;
+    color: #f0e6f8;
+}
+
+/* ===== Membership Section ===== */
+.membership-section {
+    background-color: #45375f;
+    padding: 100px 50px;
+    text-align: center;
+    color: #941fa8;
+    margin-top: 80px;
+}
+
+.membership-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.member-card {
+    width: 220px;
+    color: #fff;
+    text-align: center;
+}
+
+.member-card img {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.member-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    font-size: 14px;
+    color: #f3d8ff;
+}
+
+.membership-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.membership-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Videos Section ===== */
+.videos-section {
+    padding: 80px 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.videos-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.videos-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.video-card img.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructor img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.instructor h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.rating-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-duration img {
+    height: 16px;
+}
+
+.rating-duration p {
+    font-size: 12px;
+    color: #999;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-tags span {
+        font-size: 16px;
+    }
+
+    .hero-text button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .pros-cards .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .videos-section {
+        padding: 60px 50px;
+    }
+
+    .videos-section h2 {
+        font-size: 28px;
+    }
+
+    .video-card {
+        width: 200px;
+    }
+
+    .video-card img.thumbnail {
+        height: 120px;
+    }
+
+    .quote-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 60px 30px;
+    }
+
+    .membership-cards {
+        gap: 30px;
+    }
+
+    .member-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-tags {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pros-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pros-cards .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .videos-section {
+        padding: 50px 20px;
+    }
+
+    .videos-section h2 {
+        font-size: 24px;
+    }
+
+    .videos-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .instructor {
+        justify-content: center;
+    }
+
+    .quote-section blockquote {
+        font-size: 16px;
+    }
+
+    .quote-section h3 {
+        font-size: 18px;
+    }
+
+    .quote-section p {
+        font-size: 14px;
+    }
+
+    .membership-section {
+        padding: 60px 20px;
+    }
+
+    .membership-section h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .membership-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .member-card {
+        width: 100%;
+    }
+
+    .member-card img {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+    padding: 80px 100px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.faq-wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* horizontally center columns */
+    flex-wrap: wrap;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 300px; /* responsive width */
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-item h3:hover {
+    color: #ff6b6b; /* accent color on hover */
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 1024px) {
+    .faq-section {
+        padding: 60px 50px;
+    }
+
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-wrapper {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .faq-section {
+        padding: 50px 20px;
+    }
+
+    .faq-section h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .faq-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #222; /* dark background */
+    color: #fff;
+    padding: 40px 100px;
+}
+
+.footer-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between; /* logo left, icons right */
+    align-items: center;
+    flex-wrap: wrap; /* allow wrap on small screens */
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ff6b6b; /* accent hover color */
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center; /* centered trademark */
+}
+
+/* ===== Footer Responsive ===== */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 40px 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        height: 40px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+}
