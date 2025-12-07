@@ -72,7 +72,3 @@ No JavaScript is required for this project.
 ---
 
 ## 📁 Project Structure
-<<<<<<< HEAD
-=======
-
->>>>>>> 6095909d4e7653c7f34059c8ebac05fbb0f4092a
