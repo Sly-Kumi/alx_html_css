@@ -1,0 +1,351 @@
+/* --------------------------------
+   GLOBAL RESET
+-------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+/* --------------------------------
+   HERO SECTION
+-------------------------------- */
+.hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+/* --------------------------------
+   NAVBAR
+-------------------------------- */
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #FF6565;
+}
+
+/* --------------------------------
+   MOBILE MENU
+-------------------------------- */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 70px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+#menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+}
+
+/* --------------------------------
+   HERO CONTENT
+-------------------------------- */
+.hero-content {
+    text-align: center;
+    margin-top: 150px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+.cta-button {
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #FF6565;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    margin-top: 20px;
+    font-size: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* --------------------------------
+   WHAT WE DO
+-------------------------------- */
+.what-we-do {
+    background-color: white;
+    color: #333;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service-item {
+    max-width: 200px;
+}
+
+.service-item span {
+    font-size: 55px;
+    color: #FF6565;
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------
+   OUR RESULTS (CSS PENTAGONS)
+-------------------------------- */
+.results-section {
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.results-section .section-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-lead {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* grid of results */
+.results-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+/* CSS-drawn pentagon */
+.pentagon {
+    width: 130px;
+    height: 130px;
+    background: #FF6565;
+    clip-path: polygon(
+        50% 0%, 
+        100% 38%, 
+        82% 100%, 
+        18% 100%, 
+        0% 38%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pentagon-value {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.result-label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* --------------------------------
+   CONTACT FORM
+-------------------------------- */
+.contact-section {
+    background-color: white;
+    color: #333;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+}
+
+/* --------------------------------
+   FOOTER
+-------------------------------- */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.social span {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social span:hover {
+    color: #FF6565;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* --------------------------------
+   MOBILE DESIGN
+-------------------------------- */
+@media (max-width: 480px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-content {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .results-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
