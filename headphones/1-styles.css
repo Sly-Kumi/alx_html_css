@@ -1,0 +1,187 @@
+/* ------------------------------
+   GLOBAL
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #FF6565;
+}
+
+/* ------------------------------
+   HERO CENTER CONTENT
+--------------------------------*/
+.hero-content {
+    text-align: center;
+    margin-top: 150px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #FF6565;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ------------------------------
+   MOBILE MENU
+--------------------------------*/
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    display: block;
+    font-size: 18px;
+}
+
+/* When checkbox is checked → show mobile menu */
+#menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+}
+
+/* ------------------------------
+   RESPONSIVE — MOBILE
+--------------------------------*/
+@media (max-width: 480px) {
+
+    /* Show hamburger icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide desktop nav links */
+    .nav-links {
+        display: none;
+    }
+
+    /* Center the logo on mobile */
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust hero content */
+    .hero-content {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
