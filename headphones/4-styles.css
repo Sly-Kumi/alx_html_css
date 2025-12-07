@@ -1,0 +1,226 @@
+/* ------------------------------
+   GLOBAL
+------------------------------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------- */
+.hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+/* NAVIGATION */
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img { height: 40px; margin-right: 5px; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover { color: #FF6565; }
+
+#menu-toggle { display: none; }
+
+.menu-icon { display: none; cursor: pointer; }
+.menu-icon img { width: 30px; }
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    text-align: center;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+#menu-toggle:checked ~ .mobile-menu { display: flex; }
+
+.hero-content {
+    text-align: center;
+    margin-top: 150px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background: #FF6565;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   WHAT WE DO
+------------------------------- */
+.what-we-do {
+    background: white;
+    color: #333;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-item span {
+    font-size: 50px;
+    color: #FF6565;
+}
+
+/* ------------------------------
+   RESULTS
+------------------------------- */
+.results {
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.results-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pentagon {
+    width: 120px;
+    height: 120px;
+    background: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------
+   CONTACT
+------------------------------- */
+.contact {
+    background: white;
+    color: #333;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+/* ------------------------------
+   FOOTER (TASK 4)
+------------------------------- */
+.footer {
+    background: #071629;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.social-icons span {
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    color: #FF6565;
+}
+
+copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------- */
+@media (max-width: 480px) {
+
+    .nav-links { display: none; }
+    .menu-icon { display: block; }
+
+    .services { flex-direction: column; }
+
+    .results-boxes { flex-direction: column; }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
